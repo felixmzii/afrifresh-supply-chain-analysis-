@@ -106,7 +106,8 @@ documentation/ – Project documentation
 
 ## Dashboard Preview
 
-(Add dashboard screenshot here)
+<img width="1308" height="480" alt="image" src="https://github.com/user-attachments/assets/92470c9c-4b9f-40e1-8247-572b5c0deae4" />
+
 
 ---
 
