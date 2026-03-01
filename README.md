@@ -1,117 +1,327 @@
-# afrifresh-supply-chain-analysis-
-Excel Supply Chain, Logistics, Inventory and Sales Analytics Dashboard
-# AfriFresh Supply Chain Analytics Dashboard 
+# AfriFresh Supply Chain, Logistics, Inventory and Sales Analytics Report
 
-## Project Overview
+## Executive Summary
 
-This project analyzes AfriFresh’s supply chain, logistics, inventory, and sales performance using Microsoft Excel. The objective was to transform raw operational data into actionable business insights and develop an interactive dashboard to support management decision-making.
+This report presents a comprehensive analysis of AfriFresh’s supply chain operations, including sales performance, logistics efficiency, inventory management, and warehouse operations. The analysis was conducted using Microsoft Excel and integrates data from multiple operational areas to provide management with actionable insights.
 
-The analysis integrates multiple operational datasets including orders, products, warehouses, inventory, and shipments to provide end-to-end visibility into supply chain performance.
+The project involved building a structured data model, calculating key performance indicators (KPIs), performing business and statistical analysis, and developing an interactive dashboard to support decision-making.
 
----
+Key findings indicate that AfriFresh is operating with a healthy profit margin, efficient delivery timelines, and strong performance in selected product categories and warehouse locations. However, opportunities exist to optimize inventory allocation, improve profitability in lower-performing categories, and further enhance operational efficiency.
 
-## Business Problem
-
-Management lacked centralized visibility into key operational metrics such as profitability, inventory value, warehouse performance, and delivery efficiency. This made it difficult to identify performance gaps and make data-driven decisions.
-
-This project solves this problem by building a structured analytics model and interactive dashboard.
+This dashboard provides management with a real-time tool to monitor performance and make data-driven strategic decisions.
 
 ---
 
-## Dataset Description
+## 1. Introduction
 
-The dataset consists of multiple related tables:
+Supply chain analytics is critical for organizations that depend on efficient inventory management, logistics operations, and sales performance. AfriFresh operates across multiple warehouses and distributes various product categories, requiring effective coordination between procurement, storage, and delivery operations.
 
-• Orders – Customer order information
-• Order Details – Sales, revenue, cost, and profit data
-• Inventory – Stock levels and inventory value
-• Shipments – Delivery timelines and logistics performance
-• Warehouses – Warehouse locations and regions
-• Products – Product names, categories, and pricing
+The purpose of this project was to analyze AfriFresh’s operational data and develop a professional analytics dashboard to provide visibility into key performance areas, including profitability, inventory value, warehouse performance, and delivery efficiency.
 
-Each table is linked using unique identifiers such as OrderID, ProductID, and WarehouseID.
+The analysis transforms raw operational data into meaningful insights to support strategic planning and operational improvements.
 
 ---
 
-## Tools Used
+## 2. Project Objectives
 
-• Microsoft Excel
-• Pivot Tables
-• Excel Dashboard
-• Data Modeling
-• KPI Development
-• Data Analysis
+The main objectives of this project were:
+
+• To analyze overall sales revenue and profit performance
+• To evaluate warehouse efficiency and profitability
+• To assess inventory levels and identify optimization opportunities
+• To measure logistics performance using delivery timelines
+• To identify the most and least profitable product categories
+• To build an interactive Excel dashboard for management monitoring
+• To provide actionable recommendations based on data insights
 
 ---
 
-## Key Performance Indicators (KPIs)
+## 3. Dataset Description
 
-The dashboard tracks the following KPIs:
+The dataset consists of multiple related tables representing AfriFresh’s supply chain operations. These tables are linked using unique identifiers to ensure accurate analysis and relational integrity.
 
-• Total Revenue
-• Total Profit
-• Profit Margin
-• Total Orders
+### Tables included:
+
+**Orders Table**
+Contains information about customer orders, including OrderID, OrderDate, and WarehouseID.
+
+**Order Details Table**
+Contains transactional sales data, including:
+
+• ProductID
+• Quantity Sold
+• Unit Price
+• Revenue
+• Cost
+• Profit
+
+**Inventory Table**
+Contains stock information including:
+
+• ProductID
+• WarehouseID
+• Quantity in stock
 • Inventory Value
-• Average Delivery Days
 
-These KPIs provide a complete view of business performance.
+**Shipments Table**
+Contains logistics performance data including:
+
+• ShipmentID
+• OrderID
+• Delivery Days
+
+**Warehouses Table**
+Contains warehouse location and regional information.
+
+**Products Table**
+Contains product information including:
+
+• Product Name
+• Category
+• Standard Price
+
+All tables are connected using unique IDs such as OrderID, ProductID, and WarehouseID.
 
 ---
 
-## Dashboard Features
+## 4. Data Modeling and Relationships
 
-• Interactive KPI cards
+To enable accurate analysis, relationships were established between tables using unique identifiers:
+
+• Orders linked to Order Details using OrderID
+• Order Details linked to Products using ProductID
+• Orders linked to Warehouses using WarehouseID
+• Shipments linked to Orders using OrderID
+• Inventory linked to Products and Warehouses
+
+This relational structure ensures accurate aggregation and reporting across multiple operational areas.
+
+---
+
+## 5. Key Performance Indicators (KPIs)
+
+The following KPIs were calculated to measure business performance:
+
+### Total Revenue
+
+Measures total sales generated across all products and warehouses.
+
+Importance: Indicates overall business growth and sales performance.
+
+---
+
+### Total Profit
+
+Measures total profit generated after deducting costs.
+
+Importance: Indicates financial performance and business sustainability.
+
+---
+
+### Profit Margin
+
+Calculated as:
+
+Profit Margin = Total Profit / Total Revenue
+
+Importance: Measures efficiency and profitability.
+
+---
+
+### Total Orders
+
+Counts total number of unique customer orders.
+
+Importance: Measures business activity level.
+
+---
+
+### Inventory Value
+
+Measures total monetary value of all stock across warehouses.
+
+Importance: Indicates capital tied up in inventory.
+
+---
+
+### Average Delivery Days
+
+Measures average delivery time for shipments.
+
+Importance: Indicates logistics efficiency and customer service quality.
+
+---
+
+## 6. Dashboard Development
+
+An interactive Excel dashboard was developed to allow management to monitor performance dynamically.
+
+### Dashboard features include:
+
+• KPI cards displaying key business metrics
 • Profit analysis by warehouse
 • Profit analysis by product category
 • Inventory value monitoring
 • Delivery performance tracking
-• Interactive slicers for filtering by:
 
-* Warehouse
-* Product Category
-* Region
-* Product
+### Interactive Filters (Slicers):
 
----
+• Warehouse
+• Product Category
+• Product Name
+• Region
 
-## Key Business Insights
-
-• Certain warehouses generate significantly higher profit
-• High-margin product categories drive profitability
-• Inventory optimization opportunities exist
-• Delivery performance is efficient and consistent
-• Profitability varies across operational segments
+These filters allow management to analyze performance across different operational segments.
 
 ---
 
-## Business Recommendations
+## 7. Data Analysis and Findings
+
+The analysis revealed several important performance trends:
+
+### Profitability Analysis
+
+AfriFresh operates with a healthy profit margin, indicating effective pricing and cost management.
+
+However, profitability varies across warehouses and product categories.
+
+Some warehouses generate significantly higher profit than others.
+
+---
+
+### Warehouse Performance
+
+Certain warehouses outperform others due to:
+
+• Higher sales volume
+• Better product mix
+• Strong regional demand
+
+Lower-performing warehouses may require operational review.
+
+---
+
+### Product Category Performance
+
+Some product categories generate higher profit margins.
+
+Lower-performing categories may have:
+
+• Lower demand
+• Higher cost
+• Lower pricing efficiency
+
+This presents opportunities for optimization.
+
+---
+
+### Inventory Analysis
+
+Inventory value is significant, indicating capital investment in stock.
+
+Opportunities exist to optimize stock levels and reduce slow-moving inventory.
+
+---
+
+### Logistics Performance
+
+Average delivery time is within acceptable operational standards.
+
+Efficient delivery contributes to customer satisfaction and operational efficiency.
+
+---
+
+## 8. Business Insights
+
+The analysis provides several critical business insights:
+
+• Profitability varies significantly by warehouse
+• Certain product categories contribute most to profit
+• Inventory optimization can improve cash flow
+• Efficient delivery operations support customer satisfaction
+• Dashboard enables real-time performance monitoring
+
+These insights enable data-driven decision-making.
+
+---
+
+## 9. Business Recommendations
+
+Based on the analysis, the following recommendations are proposed:
+
+### Operational Recommendations
 
 • Increase stock allocation to high-performing warehouses
-• Optimize inventory to reduce slow-moving stock
-• Focus on high-profit product categories
 • Improve performance of lower-performing warehouses
-• Maintain efficient delivery operations
+• Optimize product distribution
 
 ---
 
-## Project Structure
+### Financial Recommendations
 
-data/ – Raw dataset
-dashboard/ – Dashboard screenshots
-reports/ – Executive report
-documentation/ – Project documentation
-
----
-
-## Dashboard Preview
-
-<img width="1308" height="480" alt="image" src="https://github.com/user-attachments/assets/92470c9c-4b9f-40e1-8247-572b5c0deae4" />
-
+• Focus on high-profit product categories
+• Review pricing strategies for low-profit products
+• Monitor profit margin continuously
 
 ---
 
-## Author
+### Inventory Recommendations
+
+• Reduce slow-moving inventory
+• Implement demand-based stock planning
+• Improve inventory turnover
+
+---
+
+### Logistics Recommendations
+
+• Maintain efficient delivery timelines
+• Optimize delivery routes
+• Improve coordination between warehouses
+
+---
+
+## 10. Dashboard Value to Management
+
+The dashboard provides management with:
+
+• Real-time performance monitoring
+• Profitability tracking
+• Inventory visibility
+• Operational efficiency insights
+• Decision-support capabilities
+
+This improves strategic and operational decision-making.
+
+---
+
+## 11. Project Tools and Technologies
+
+The following tools were used:
+
+• Microsoft Excel
+• Pivot Tables
+• Excel Dashboard Design
+• Data Modeling
+• KPI Development
+• Business Analysis
+
+---
+
+## 12. Conclusion
+
+This project successfully demonstrates the use of Excel to analyze supply chain, logistics, inventory, and sales data.
+
+The interactive dashboard provides management with clear visibility into business performance and supports data-driven decision-making.
+
+The analysis identified opportunities to improve profitability, optimize inventory, and enhance operational efficiency.
+
+This solution can be further enhanced using advanced tools such as SQL, Power BI, and Python for enterprise-level analytics.
+
+---
+
+## 13. Author
 
 Felix Ondari
-Data Analyst  | Supply Chain Analytics
+Data Analyst – Supply Chain Analytics
+Excel Dashboard and Business Intelligence Specialist
