@@ -114,4 +114,4 @@ documentation/ – Project documentation
 ## Author
 
 Felix Ondari
-Data Analyst | Excel Dashboard Developer | Supply Chain Analytics
+Data Analyst  | Supply Chain Analytics
